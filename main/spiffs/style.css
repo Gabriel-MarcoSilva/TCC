@@ -1,0 +1,131 @@
+:root {
+/* 1. DECLARAÇÃO DA VARIÁVEL BASE */
+/* Definimos a unidade base em 5 pixels. */
+--tamanho-base: 10px; 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: roboto sans-serif;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: #f0f0f0;
+}
+
+#container-buttons {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#container-wave {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#buttons-wave {
+    width: 80%;
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#buttons-control {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.btn, .btn-wave {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007BFF;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-wave:hover {
+    background-color: red;
+}
+
+#wave {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 100%;
+}
+
+.onda-curta {
+    width: var(--tamanho-base); 
+    height: 60px;
+    border-top: 3px solid #000; 
+    border-left: 3px solid #000; 
+    border-right: 3px solid #000; 
+}
+
+.onda-longa {
+    width: calc(var(--tamanho-base) * 3); 
+    height: 60px;
+    border-top: 3px solid #000; 
+    border-left: 3px solid #000; 
+    border-right: 3px solid #000; 
+}
+.onda-gap {
+    width: var(--tamanho-base); 
+    height: 60px;
+    border-bottom: 3px solid #000;
+}
+
+#LR-controll {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: white;
+}
+
+.slider {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.slider section {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+}
